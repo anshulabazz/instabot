@@ -9,10 +9,10 @@ from self_info import self_info
 
 
 from post_a_comment import post_a_comment
-from delete_a_comment import delete_a_comment
+from delete_negative_comment import delete_negative_comment
 import sys
 from termcolor import colored
-from trending import get_trending_tag_counts
+from trending_hashtag import get_trending_tag_counts
 
 
 #   <-------------------------InstaBot Application Starts From Here------------------------>
@@ -85,7 +85,7 @@ while show_menu:        #if user enter valid key
 
         elif menu_choice == 8:
             insta_username = input("Enter the username of the user: ")
-            delete_a_comment(insta_username)
+            delete_negative_comment(insta_username)
 
         elif menu_choice == 9:
             tag =input("Enter Tagname.........\n")

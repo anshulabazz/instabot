@@ -5,7 +5,6 @@ from get_user_post import get_user_post
 
 def comment_user_post1(insta_username):
     #Function Logic for post a Comment
-
     post_id = get_user_post(insta_username)   #Get the User's Post Id
     message =input("\n\tPlease Enter Your comment : \n")
     request_url = (BASE_URL + 'media/%s/comments') % (post_id)
